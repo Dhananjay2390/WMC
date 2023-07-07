@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic Encyclopedia</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js">
+    // script.js
+const searchBar = document.getElementById('searchBar');
+
+searchBar.addEventListener('click', function() {
+  this.style.width = '300px';
+});
+
+
+
+  </script>
+  
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@100&display=swap');
+
+    /* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  position: fixed;
+  
+  }
+
+
+nav ul {
+  list-style-type: none;
+  margin-right: 50px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.hero-section {
+  background-image: url('https://ibb.co/L9tHj0C');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-content {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  padding-top: 100px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  transition: width 0.3s;
+}
+
+input[type="text"]:focus {
+  width: 300px;
+}
+.container::before {
+            content: '';
+            background: url('background.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.8;
+            height: 100vh;
+            width: 100vw;
+        }
+        h1 {
+            font-family: 'Caprasimo', cursive;
+font-family: 'Poppins', sans-serif;
+margin-left: 50px;
+  
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+        
+      <h1 id="neon-heading">Hogwart's Wizardry </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html" target="_blank">Spells</a></li>
+          <li><a href="#">Potions</a></li>
+          <li><a href="#">Creatures</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Explore the Magical World of Hogwarts</h2>
+        <p>Unlock the secrets of spells, potions, and creatures.</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </section>
+    <section class="search-section">
+      <input type="text" id="searchBar" placeholder="Search for spells, potions, creatures...">
+    </section>
+  </div>
+</body>
+</html>
